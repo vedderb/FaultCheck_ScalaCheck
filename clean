@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# FaultCheck
+cd FaultCheck
+make clean
+rm -Rf *.so*
+cd ..
+
+# The E2E_Scala example
+cd Examples/E2E_Scala/Application
+make clean
+cd ..
+./clean_coverage
+cd ../..
+

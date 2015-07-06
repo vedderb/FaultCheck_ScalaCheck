@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# FaultCheck
+cd FaultCheck
+qmake
+make
+cd ..
+
+# The E2E_Scala example
+cd Examples/E2E_Scala/Application
+make
+cd ../../..
+

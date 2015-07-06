@@ -1,0 +1,11 @@
+import sbt._
+
+class Project(info: ProjectInfo) extends DefaultProject(info)
+{
+  // Repository for snapshots (0.6.2-SNAPSHOT onwards)
+  val sonatypeSnapshotsRepo = "Sonatype OSS Snapshots Repository" at "http://oss.sonatype.org/content/groups/public"
+  // Repository for old releases <= 0.6
+  val nativelibs4javaRepo = "NativeLibs4Java Repository" at "http://nativelibs4java.sourceforge.net/maven/"
+  val bridj = "com.nativelibs4java" % "bridj" % "0.6.2"
+}
+
